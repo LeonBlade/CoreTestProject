@@ -9,5 +9,6 @@ before_build:
   - nuget restore
 
 artifacts:
-  - path: bin
+  - path: %APPVEYOR_BUILD_FOLDER%/CoreTestProject/bin/Debug/netcoreapp3.1/
     name: CoreTestProject
+    type: zip
